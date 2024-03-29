@@ -3,18 +3,20 @@
         background-color: #D5D5D5;
         font-family: system-ui;
     }
-    .container{
+    .container {
         background-color: #E9E7EA;
-        width:1000px;
+        width: 1000px;
         max-width: 100%;
-        margin:auto;
-        padding:50px;
-        box-shadow: 0 10px 50px #858585;
+        margin: 0 auto; /* Căn giữa theo chiều ngang */
+        padding: 50px;
         display: grid;
-       grid-template-columns: 35% 60%;
-       column-gap: 5%; 
-       row-gap: 30px;
+        grid-template-columns: 35% 60%;
+        column-gap: 5%;
+        row-gap: 30px;
     }
+    
+    
+    
     
     .avatar img{
         width:200px;
@@ -84,6 +86,7 @@
     h2{
         padding:0;
         margin: 0 0 20px 0;
+        color: rgb(0, 14, 206);
     }
     .intro{
         padding-left: 30px;
@@ -135,3 +138,40 @@
         border-radius: 50%;
         left: -37px;
     }
+
+    .skills-container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.column-heading {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0px; /* Giảm khoảng cách giữa các dòng */
+    line-height: 0xp; /* Đặt khoảng cách giữa các dòng (tương đối) */
+}
+
+/* Change icon color to teal */
+.fab {
+    color: rgb(0, 143, 36);
+}
+
+.fas {
+    color: rgb(0, 143, 36);
+}
+
+/* Include Font Awesome CSS (you can use other icon libraries if preferred) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+    
