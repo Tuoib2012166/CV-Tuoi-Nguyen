@@ -1,120 +1,234 @@
- 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CV_Tuoi_Nguyen</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    </head>
-    <body>
-        <div class="container">
-           <div class="avatar">
-            <img src="profile.jpg" alt="Description">
-           </div>
-           <div class="name">
-                <h1>NGUYEN TRAN NGOC TUOI</h1>
-                <div class="specialize"></div>
-                <ul class="contact">
-                    <li>
-                        <span>P</span> +84386812933
-                    </li>
-                    <li>
-                        <span>E</span> tuoinguyen106@gmail.com
-                    </li>
-                </ul>
-                    <a class="icon-container" href="https://www.facebook.com/tuoinguyen100402"><i class="fab fa-facebook-f"></i></a>
-                    <a class="icon-container" href="https://www.linkedin.com/in/t%C6%B0%C6%A1i-nguy%E1%BB%85n-307b992b8/"><i class="fab fa-linkedin"></i></a>
-                    <a class="icon-container" href="https://www.instagram.com/tutu10135/"><i class="fab fa-instagram"></i></a>
-           </div>
-           <div class="info">
-                <ul>
-                    <li>From <b>Chau Thanh - An Giang - VietNam</b></li>
-                    <li>10/04/2002</li>
-                    <li>Can Tho University</li>
-                </ul>
-           </div>
-           <div class="intro">
-            <h2>INTRODUCE MYSELT</h2>
-            As a final-year student majoring in Software Engineering, I am actively seeking an internship opportunity to apply my knowledge and skills in a real-world setting. My enthusiasm and eagerness to learn will contribute to every project I undertake.
-           </div>
-           <div class="experience">
-            <h2>EXPERIENCE</h2>
-    
-            <div class="item">
-                <h4>B1 English degree</h4>
-                <div class="time">
-                   <span>2023</span>
-                </div>
-                <div class="des">
-                    With a B1 level of English proficiency, I am capable of basic communication and understanding of the English language. This enables me to work confidently in international environments and effectively convey opinions and information clearly.
-                </div>
-            </div>
-    
-                <div class="item">
-                    <h4>Student</h4>
-                    <div class="time">
-                       <span>2020 - 2024</span>
-                       <span>Can Tho University</span>
-                    </div>
-                    <div class="des">
-                        During my time at the Can Tho University, I gained exposure to and applied fundamental knowledge in practical scenarios through various hands-on projects. This helped me develop essential skills to tackle complex issues in the field of Software Engineering.
-                    </div>
-                </div>
-                <h2 class="skills">
-                    SKILLS
-                </h2>
-                <div class="skills-container">
-                    <div class="column">
-                        <h3 class="column-heading">Frontend</h3>
-                        <ul>
-                            <li><i class="fab fa-html5"></i> HTML</li>
-                            <li><i class="fab fa-css3-alt"></i> CSS</li>
-                            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                            <li><i class="fab fa-js"></i> Javascript</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3 class="column-heading">Backend</h3>
-                        <ul>
-                            <li><i class="fab fa-cuttlefish"></i> C++</li>
-                            <li><i class="fas fa-database"></i> MySql</li>
-                            <li><i class="fab fa-git-alt"></i> Git</li>
-                            <li><i class="fab fa-csharp"></i> C#</li>
-                        </ul>
-                    </div>
-                </div>                
-           </div>
-           <div class="project">
-            <h2>PROJECTS</h2>
-            <div class="item">
-                <h4>English Vietnamese Dictionary</h4>
-                <div class="time">
-                    2022
-                </div>
-                <div class="location">
-                    C#, Winform
-                </div>
-                <div class="des">
-                    It's a small project called English Vietnamese Dictionary. The application allows users to quickly look up English-Vietnamese translations. Users can enter a word into the search box and get instant results, making it easy for them to learn and use English in their daily lives.
-                </div>
-            </div>
-    
-            <div class="item">
-                <h4>Accommodation Search Website Project</h4>
-                <div class="time">
-                    2024
-                </div>
-                <div class="des">
-                    The accommodation search website project is currently under development to provide a convenient platform for users to find suitable accommodation. This application offers detailed information about apartments, rooms, helping users save time and effort in their search for accommodation.
-                </div>
-            </div>
-                </div>
-            </div>
-           </div>
-        </div>    
-    </body>
-    </html>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Tên trang web -->
+<title>Yêu Thụy Đẹp</title>
+<script>
+    //Thay phần kịch bản bằng kịch bản của bạn
+    var kichban = [
+        ['Bé Đẹp à, anh có điều muốn nói','Anh nói đi'],
+        ['Anh muốn hỏi em là:..','Đừng ngại, anh cứ nói đi :>']
+    ]
+    //Thay loiToTinh bằng lời tỏ tình của bạn
+    var loiToTinh = 'Em có yêu anh không?'
+    //Thay lời xác nhận bằng lời xác nhận của bạn
+    var xacnhan = 'Anh cũng yêu em :>';
+    //Tốc độ in chữ ra
+    var tocDo = 50;
+    //Khi chọn Không thì sẽ thông báo ra:
+    var khiChonKhong = 'Đừng ngoan cố thế chọn nút kia đi!'
+    var linkToMess = 'https://www.facebook.com/tuoinguyen100402'
+</script>
+
+
+<style>
+/* .button-55{
+    transform: translateX(100px);
+} */
+.hidden{
+    display: none;
+}
+.btn{
+    align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+</style>
+</head>
+
+<body style="background-color: #ffb6ba;">
+<div id="kichban" style="width: 100%;display: flex;justify-content: center;">
+    <div id="ques" style="margin-top:10rem;padding: 20px;box-shadow: rgba(42, 42, 43, 0.2) 0px 7px 29px 0px;width:30rem;background-color: #bbd1ff;" class="btn">
+        <h1 id="titleKichBan"></h1>
+        <div class="ans" style="display: flex;justify-content: space-evenly;">
+            <a id="ansKichBan" class="button1" onclick="next()" style="transition: 1s;">
+                
+            </a>
+        </div>
+    </div>
+</div>
+<div id="mainQues" style="transform: translateY(-100rem);width: 100%;display: flex;justify-content: center;">
+    <div id="ques" style="margin-top:10rem;padding: 20px;box-shadow: rgba(42, 42, 43, 0.2) 0px 7px 29px 0px;width:30rem;background-color: #bbd1ff;" class="btn">
+        <h1 id="loiToTinh"></h1>
+        <div class="ans" style="display: flex;justify-content: space-evenly;">
+            <a id="hate" class="button1" onclick="hate()" style="transition: 1s;">
+                <button class="button-55" role="button">Không đâu</button>
+            </a>
+            <a id="start" class="button1" onclick="typeWriter()">
+                <button class="button-55" role="button">Có ạ</button>
+            </a>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="a" style="margin:0 10rem;">
+<h1 id="main" class="btn" class="hidden">
+</h1>
+
+
+<div id="result">
+<!-- Thay phần thẻ pre này bằng html ảnh của bạn -->
+	<img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/326253531_705687251056685_5834846378463274078_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OajeJckHovcQ7kNvgFbxJ_3&_nc_ht=scontent.fsgn2-5.fna&oh=00_AYCENUvPhJFGN3NeyLNcPM4i1hQkyg2I-_zhVanGivhdww&oe=665483EBhttps://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/326253531_705687251056685_5834846378463274078_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OajeJckHovcQ7kNvgFbxJ_3&_nc_ht=scontent.fsgn2-5.fna&oh=00_AYCENUvPhJFGN3NeyLNcPM4i1hQkyg2I-_zhVanGivhdww&oe=665483EB" alt="s">
+<!---->
+
+</div>
+<div id="linkToFB" style="display:none"></div>
+</div>
+
+<script>
+    document.getElementById("result").style.width="fit-content"
+    document.getElementById("result").style.display="none"
+
+var i = 0;
+var l=0,k=0;
+
+function typeKichban() {
+
+    // document.getElementById("start").style.display="none"
+    if (l < kichban[0][0].length) {
+        document.getElementById("titleKichBan").innerHTML += kichban[0][0].charAt(l);
+        l++;
+        setTimeout(typeKichban, tocDo );
+    }else{
+        setTimeout(()=>{
+            document.getElementById("ansKichBan").innerHTML = `<button class="button-55" role="button">${kichban[0][1]}</button>`
+        }, tocDo );
+    }
+}
+typeKichban()
+document.getElementById("ansKichBan").onmousedown=()=>{i=0;k+=1;l=0;document.getElementById("titleKichBan").innerHTML="";next()}
+function next() {
+
+    // document.getElementById("start").style.display="none"
+    if (l < kichban[0][0].length) {
+        document.getElementById("titleKichBan").innerHTML += kichban[1][0].charAt(l);
+        l++;
+        setTimeout(next, tocDo );
+    }else{
+        setTimeout(()=>{
+            document.getElementById("ansKichBan").innerHTML = `<button class="button-55" role="button">${kichban[1][1]}</button>`
+        }, tocDo );
+    }
+    if(k==2){
+        document.getElementById("kichban").style.transition="2s"
+        document.getElementById("kichban").style.transform="translateY(-100rem)"
+        k+=1;
+    }if(k==3){
+        setTimeout(()=>{
+            document.getElementById("mainQues").style.transform="translateY(-20rem)"
+        }, 1000 );
+        setTimeout(()=>{
+            typer()
+        }, 1000 );
+        
+    }
+}
+
+function hate() {
+    alert(khiChonKhong)
+}
+var n=0;
+function typer() {
+    // document.getElementById("start").style.display="none"
+    if (n < loiToTinh.length) {
+        document.getElementById("loiToTinh").innerHTML += loiToTinh.charAt(n);
+        n++;
+        setTimeout(typer, tocDo );
+    }
+}
+
+function typeWriter() {
+    document.getElementById("hate").style.display="none"
+    document.getElementById("ques").style.display="none"
+    document.getElementById("mainQues").style.display="none"
+    document.getElementById("main").classList.remove("hidden")
+    document.getElementById("ques").style.marginTop="0"
+    // document.getElementById("start").style.display="none"
+    if (i < xacnhan.length) {
+        document.getElementById("main").innerHTML += xacnhan.charAt(i);
+        i++;
+        setTimeout(typeWriter, tocDo );
+    }else {
+        document.getElementById("result").style.display="block"
+        document.getElementById("linkToFB").style.display="block"
+    }
+}
+document.getElementById("hate").onmouseover=()=>{
+    // document.getElementById("hate").style.position="fixed"
+    document.getElementById("hate").style.transform=`translate(${(Math.floor(Math.random() * 4)?Math.floor(Math.random() * 4):1)*100}px,${Math.floor(Math.random() * 4)*100}px)`
+}
+
+document.getElementById("linkToFB").innerHTML=
+`   <a href='${linkToMess}'>
+        <button class="button-55" role="button">Nói với anh tình cảm của em nào:></button>
+    </a>`
+
+</script>
+</body>
+</html>
